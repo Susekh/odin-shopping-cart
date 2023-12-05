@@ -1,0 +1,38 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar > ul{
+    list-style-type: none;
+    margin: 0;  
+    padding: 0px;  
+    overflow: hidden; 
+    display: flex;
+    gap: 1rem;
+}
+
+.navBar-l-cont > li > a{ 
+    
+    display: block;  
+    color: blue;  
+   font-size:1.6rem;  
+    text-align: center;
+    padding: 0.5rem; 
+    text-decoration: none;  
+}
+
+
+.navBar-cont > li:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.455);
+}
+
+.navBar-r-cont > li > div {
+    display: block;  
+    color: blue;  
+   font-size:1.6rem;  
+    text-align: center;
+    padding: 0.5rem; 
+    text-decoration: none;  
+}
