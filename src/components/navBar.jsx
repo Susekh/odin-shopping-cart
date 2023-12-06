@@ -1,7 +1,22 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import '../styleSheets/navBar.css'
+import PropTypes from 'prop-types';
 
-const NavBar = () => {
+
+
+
+const NavBar = (props) => {
+    const cart = props.cart;
+    const toggleCart = props.toggleCart;
+    const setToggleCart = props.setToggleCart;
+    
+
+
+
+    
+
+
     return(
         <>
             <nav className="navBar">
@@ -10,12 +25,18 @@ const NavBar = () => {
                     <li><Link to="shop">Shop</Link></li>
                 </ul>
                 <ul className="navBar-r-cont navBar-cont ">
-                    <li><div>Cart</div></li>
-                    
+                    <li><div onClick={() => { setToggleCart(!toggleCart)}}>{cart}</div></li>
                 </ul>
             </nav>
         </>
     )
+}
+
+
+
+NavBar.propTypes = {
+    cart: PropTypes.number,
+    setCart: PropTypes.function,
 }
 
 export default NavBar;

@@ -36,3 +36,8 @@
     padding: 0.5rem; 
     text-decoration: none;  
 }
+
+.cart-bar{
+    width: 50rem;
+    height: 100vh;
+}
