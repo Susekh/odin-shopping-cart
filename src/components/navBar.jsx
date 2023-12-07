@@ -12,11 +12,6 @@ const NavBar = (props) => {
     const setToggleCart = props.setToggleCart;
     
 
-
-
-    
-
-
     return(
         <>
             <nav className="navBar">
@@ -36,7 +31,8 @@ const NavBar = (props) => {
 
 NavBar.propTypes = {
     cart: PropTypes.number,
-    setCart: PropTypes.function,
-}
+    toggleCart: PropTypes.bool,
+    setToggleCart: PropTypes.func,
+};
 
 export default NavBar;

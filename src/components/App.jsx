@@ -15,14 +15,27 @@ import FetchProducts from "../customHooks/loadProducts.jsx";
 
 const App = () => {
   
-  const [respose, setResponse] = useState(null);
+  const [response, setResponse] = useState(null);
   FetchProducts('https://fakestoreapi.com/products?limit=50', setResponse);
   const [toggleCart, setToggleCart] = useState(false);
 
   const [cart, setCart] = useState(0);
 
   const [renderCart, setRenderCart] = useState({});
+  const [subTotal, setSubTotal] = useState(0);
   const keysArray = Object.keys(renderCart);
+
+  
+
+  function handleClickCart(key,renderCartVal, setCartVal,itemPrice){
+    setRenderCart(prevCounts => ({
+      ...prevCounts,
+      [key]: renderCartVal,
+    }));
+    setCart(setCartVal);
+    setSubTotal(itemPrice);
+}
+
   return (
   
   <>
@@ -32,30 +45,65 @@ const App = () => {
           <div>
             <Routes>        
               <Route path="/"  element={<HomePage/>}/>
-              <Route path="/shop"  element={<Shop setCart = {setCart} cart={cart} renderCart = {renderCart} setRenderCart = {setRenderCart} />}/>
+              <Route path="/shop"  element={<Shop setCart = {setCart} 
+              cart={cart} renderCart = {renderCart} setRenderCart = {setRenderCart} setToggleCart={setToggleCart}
+               toggleCart={toggleCart} response={response} subTotal={subTotal} setSubTotal={setSubTotal} />}/>
               <Route path="*" element={<ErrorPage />} />
             </Routes>
           </div>
         </div>
         
-          {toggleCart?(
+          {toggleCart && (
             <div>
                       <div onClick={() => { setToggleCart(!toggleCart)}} className="shop-overlay"></div>
-                      <div className="shop-cart-bar">
+                      <div className={`shop-cart-bar`}>
+                        
+                          <div>
+                          <h1>Shopping Bag</h1>
                           {
+                            keysArray.length ? (
                               keysArray.map((key, index) => (
-                              (
-                                  <div key={index}>
-                                      <img src={respose[key].image}></img>
-                                      <p>{respose[key].title}<br></br>${respose[key].price}x{renderCart[key]}</p>
-                                  </div>
-                              )
-                          ))
+                              (renderCart[key] >0 && (
+                                      <div className="cart-item" key={index}>
+                                          <div className="cart-item-img"><img src={response[key].image} alt={response[key].title}></img></div>
+                                          <div className="cart-item-width">
+                                            <p>{response[key].title}</p>
+                                            <div className="cart-item-details">
+                                                <strong>${response[key].price}</strong>
+                                                <div className="cart-item-nums">
+                                                  <button onClick={()=> {handleClickCart(key,renderCart[key]-1,cart-1,subTotal-response[key].price)}}>-</button>
+                                                  <p>{renderCart[key]}</p>
+                                                  <button onClick={()=> {handleClickCart(key,renderCart[key]+1,cart+1,subTotal+response[key].price)}}>+</button>
+                                                </div>
+                                            </div>
+                                          </div>
+                                      </div>
+                                  ))
+                              ))
+                            ) :(
+                              <p>Your shopping cart is empty.</p>
+                            )
+
                           }
+                          
+                            
+                        </div>
+                        <div className="purchase-item">
+                        <div className="subtotal-div">
+                          <p>Subtotal: </p>
+                          <p>${subTotal}</p>
+                        </div>
+                          <div className="checkout-btn-border">
+                            <button className="checkout-btn">CHECKOUT</button>
+                          </div>
+                        </div>
+                      
+                          
                       </div>
+                      
             </div>
             
-                  ): ''}
+                  )}
        
      </div>
   </>

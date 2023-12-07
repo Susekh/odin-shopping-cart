@@ -1,26 +1,29 @@
 import '../styleSheets/Shop.css'
-import { useState } from 'react';
-import FetchProducts from '../customHooks/loadProducts';
 import PropTypes from 'prop-types';
 
 
 const Shop = (props) =>{
-    const [respose, setResponse] = useState(null);
     const setCart = props.setCart;
     const cart = props.cart;
+    const toggleCart = props.toggleCart;
+    const setToggleCart = props.setToggleCart;
     const setRenderCart = props.setRenderCart;
-    FetchProducts('https://fakestoreapi.com/products?limit=50', setResponse);
+    const respose = props.response;
+    const subTotal = props.subTotal;
+    const setSubTotal  = props.setSubTotal;
 
 
     
 
-    function handleClick(index){
+    function handleClick(index,itemPrice){
         
             setCart(cart+1);
             setRenderCart((prevCounts => ({
                 ...prevCounts,
                 [index]: (prevCounts[index] || 0)+1,
               })))
+              setToggleCart(!toggleCart);
+            setSubTotal(itemPrice);
             
        
     }
@@ -43,7 +46,7 @@ const Shop = (props) =>{
                                             <p>{item.description}</p>
                                             <div >
                                                 <p className='item-price'>${item.price}</p>
-                                                <button onClick={()=>{handleClick(index)}}>Add to Cart</button>
+                                                <button onClick={()=>{handleClick(index,subTotal+item.price)}}>Add to Cart</button>
                                             </div>
                                             
                                         </div>
@@ -63,9 +66,15 @@ const Shop = (props) =>{
 
 Shop.propTypes = {
     cart: PropTypes.number,
-    setCart: PropTypes.function,
+    setCart: PropTypes.func,
+    toggleCart: PropTypes.bool,
+    setToggleCart: PropTypes.func,
     renderCart: PropTypes.object,
-    setRenderCart: PropTypes.function,
-};
+    setRenderCart: PropTypes.func,
+    response: PropTypes.object,
+    subTotal: PropTypes.number,
+    setSubTotal: PropTypes.func,
+
+  };
 
 export default Shop;

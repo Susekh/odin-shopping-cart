@@ -13,14 +13,123 @@
 }
 
 .shop-cart-bar{
-    position: absolute;
-    width: 20rem;
+    position: fixed;
+    width: 25rem;
     height: 100vh;
     background-color: white;
     top: 0;
     right: 0;
     z-index: 1000;
+    overflow: auto;
+    padding: 0 5rem;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    
+
 }
-img{
-    width: 3rem;
+
+.shop-cart-bar.hide {
+    animation-name: slide-out;
+  }
+
+@keyframes slide-in{
+    0% {transform: translateX(40rem);}
+    50% {transform: translateX(-1.5rem);}
+    100%{transform: translateX(0);}
+}
+
+@keyframes slide-out {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(1.5rem); }
+    100% { transform: translateX(40rem); }
+}
+
+.shop-cart-bar > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.cart-item{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.cart-item-width{
+    width: 20rem;
+}
+
+.cart-item-img{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cart-item-img > img{
+    width: 4rem;
+}
+
+.cart-item-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item-nums{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-item-nums > button{
+    background-color: #e2e8f0;
+    height: 1.5rem;
+    width:1.5rem;
+    border-style: none;
+}
+
+
+.purchase-item{
+    margin-top: 3rem;
+    border-top: 2px solid gray;
+    width: 23rem;
+    height: 10rem;
+    padding: 3rem 0;
+}
+
+
+.checkout-btn-border{
+    margin-top: 0.4rem;
+    position: relative;
+    border-radius: 60px;
+    height: 3.5rem;
+    background-color: black;
+    padding: 0;
+    border-style:solid;
+}
+
+.checkout-btn{
+    margin-left: 0.3rem;
+    transform: translateY(-0.3rem);
+    position: absolute;
+    border-radius: 30px;
+    padding: 1rem;
+    width: 100%;
+    border-style:solid;
+}
+
+
+.checkout-btn:hover{
+    cursor: pointer;
+    background-color: #fde68a;
+}
+
+.subtotal-div{
+    display: flex;
+    justify-content: space-between;
 }
