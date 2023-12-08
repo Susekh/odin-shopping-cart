@@ -31,7 +31,6 @@ const Shop = (props) =>{
 
     return(
         <>
-        <h1>Shop is working</h1>
         <div className='item-listing'>
             {respose? (
                     <div className='shop-items-container'>
@@ -41,13 +40,14 @@ const Shop = (props) =>{
                                     <div className='shop-items' key={item.id}>
                                         <div className='items-img-container'><img src={item.image}></img></div>
                                         <div className='item-details'>
-                                            <strong>{item.title}<br></br></strong>
-                                            <p>rating: {item.rating.rate}</p>
-                                            <p>{item.description}</p>
-                                            <div >
-                                                <p className='item-price'>${item.price}</p>
-                                                <button onClick={()=>{handleClick(index,subTotal+item.price)}}>Add to Cart</button>
-                                            </div>
+                                                <div className='shop-item-title'>
+                                                    <p>{item.title}</p>
+                                                </div>
+                                                <p className='rating-tag'>{item.rating.rate}</p>
+                                                <div className='item-price-section'>
+                                                    <strong className='item-price'>${item.price}</strong>
+                                                    <button onClick={()=>{handleClick(index,subTotal+item.price)}}>Add to Cart</button>
+                                                </div>
                                             
                                         </div>
                                     </div>

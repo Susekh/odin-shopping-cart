@@ -23,6 +23,7 @@ const App = () => {
 
   const [renderCart, setRenderCart] = useState({});
   const [subTotal, setSubTotal] = useState(0);
+  const [contractBar, setContractBar] = useState(false);
   const keysArray = Object.keys(renderCart);
 
   
@@ -33,8 +34,17 @@ const App = () => {
       [key]: renderCartVal,
     }));
     setCart(setCartVal);
-    setSubTotal(itemPrice);
+    setSubTotal(parseFloat(itemPrice.toFixed(2)));
 }
+
+  function handleClickOverlay(){
+    setContractBar(!contractBar);
+
+    setTimeout(() => {
+      setToggleCart(!toggleCart);
+      setContractBar(false);
+    }, 500);
+  }
 
   return (
   
@@ -55,8 +65,8 @@ const App = () => {
         
           {toggleCart && (
             <div>
-                      <div onClick={() => { setToggleCart(!toggleCart)}} className="shop-overlay"></div>
-                      <div className={`shop-cart-bar`}>
+                      <div onClick={handleClickOverlay} className={`shop-overlay ${contractBar ? 'shop-overlay-hide' : ''} `}></div>
+                      <div className={`shop-cart-bar ${contractBar ? 'shopping-bar-hide' : ''}`}>
                         
                           <div>
                           <h1>Shopping Bag</h1>
