@@ -16,7 +16,7 @@ import FetchProducts from "../customHooks/loadProducts.jsx";
 const App = () => {
   
   const [response, setResponse] = useState(null);
-  FetchProducts('https://fakestoreapi.com/products?limit=50', setResponse);
+  FetchProducts('https://fakestoreapi.com/products?limit=20', setResponse);
   const [toggleCart, setToggleCart] = useState(false);
 
   const [cart, setCart] = useState(0);

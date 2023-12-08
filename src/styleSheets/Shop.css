@@ -1,3 +1,19 @@
+.shop-items-container{
+    animation-name: fade-in-animation-shopCart;
+    animation-duration: 500ms;
+}
+
+@keyframes fade-in-animation-shopCart{
+    0% {
+        opacity: 0;
+        transform: translateX(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .item-listing{
     display: flex;
     justify-content: center;

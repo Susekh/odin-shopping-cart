@@ -1,6 +1,13 @@
 .navBar{
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    top:0;
+    left: 0;
+    padding-top: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.668);
 }
 
 .navBar > ul{
@@ -13,7 +20,6 @@
 }
 
 .navBar-l-cont > li > a{ 
-    
     display: block;  
     color: blue;  
    font-size:1.6rem;  
@@ -28,16 +34,25 @@
     background-color: rgba(128, 128, 128, 0.455);
 }
 
-.navBar-r-cont > li > div {
-    display: block;  
-    color: blue;  
-   font-size:1.6rem;  
-    text-align: center;
-    padding: 0.5rem; 
-    text-decoration: none;  
+.navBar-r-cont{
+    cursor: pointer;
 }
 
+.navBar-r-cont > img{
+    width: 3.3rem;
+    padding-right: 1rem;
+}
 .cart-bar{
     width: 50rem;
     height: 100vh;
+}
+
+.cart-alert{
+    background-color: rgba(255, 0, 0, 0.707);
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    font-size: 0.7rem;
+    transform: translateX(-2.5rem);
 }

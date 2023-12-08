@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import '../styleSheets/navBar.css'
 import PropTypes from 'prop-types';
+import cartIcon from '../assets/imgs/icons8-cart-64.png';
 
 
 
@@ -19,9 +20,10 @@ const NavBar = (props) => {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="shop">Shop</Link></li>
                 </ul>
-                <ul className="navBar-r-cont navBar-cont ">
-                    <li><div onClick={() => { setToggleCart(!toggleCart)}}>{cart}</div></li>
-                </ul>
+                <div onClick={() => { setToggleCart(!toggleCart)}} className="navBar-r-cont navBar-cont ">
+                    <img src={cartIcon}></img>
+                    <strong className="cart-alert">{cart}</strong>
+                </div>
             </nav>
         </>
     )
