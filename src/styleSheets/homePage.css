@@ -249,3 +249,12 @@
     top:1.5rem;
     left: 2.3rem;
 }
+
+.hmPg-closing-txts{
+    padding: 6rem;
+}
+
+.hmPg-closing-txts > h2{
+    padding-left: 2.4rem;
+    font-size: 3rem;
+}

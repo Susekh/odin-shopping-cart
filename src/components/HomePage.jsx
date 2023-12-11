@@ -52,6 +52,53 @@ function HomePage(){
                                     <p>Quisque condimentum tempor cursus. Nulla nunc massa, porta a venenatis in, ornare at arcu. Nam pharetra, dolor id suscipit semper, nisl tellus lacinia ligula, et sollicitudin nibh lorem eget metus. Donec in aliquam tellus.</p>
                                 </div>
                             </div>
+                            
+                            <div className="hmPg-closing-txts">
+                                <h2>Effortless <span className="bold-text">Elegance.</span></h2>
+                                <div className="hmPg-container-text" >
+                                    <p>
+                                        Indulge in a seamless style experience with our &quot;Shop the Look&quot; collection, where fashion meets convenience.
+                                        Elevate your wardrobe effortlessly by exploring carefully curated ensembles that encapsulate the latest trends and timeless classics.
+                                        With just a click, transform your look from head to toe, embracing a chic and cohesive style.
+                                        Explore the perfect combinations for every occasion, ensuring your fashion journey is not only stylish but also remarkably convenient.
+                                        rem ipsum dolor sit amet consectetur adipisicing elit. Ut in aut iusto. Alias, harum! Molestias blanditiis ipsa, atque eos nihil error
+                                        quidem libero, amet, dolorum aliquam voluptatum autem recusandae architecto consequatur natus facilis obcaecati quae incidunt unde sit 
+                                        assumenda modi officia cumque. Quasi voluptatibus beatae quam soluta dignissimos doloremque tempore tenetur nobis natus neque nisi ipsam
+                                        repellendus harum deserunt nesciunt libero doloribus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut in aut iusto. Alias, 
+                                        harum! Molestias blanditiis ipsa, atque eos nihil error
+                                          quidem libero, amet, dolorum aliquam voluptatum autem recusandae architecto consequatur natus facilis obcaecati quae incidunt unde sit 
+                                          assumenda modi officia cumque. Quasi voluptatibus beatae quam soluta dignissimos doloremque tempore tenetur nobis natus neque nisi ipsam
+                                           repellendus harum deserunt nesciunt libero doloribus, perferendis accusantium ex iusto! Doloribus et perspiciatis voluptas ipsam eos, 
+                                           natus nemo vel vitae suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut in aut iusto. Alias, harum! Molestias blanditiis ipsa, atque eos nihil error
+                                          quidem libero, amet, dolorum aliquam voluptatum autem recusandae architecto consequatur natus facilis obcaecati quae incidunt unde sit 
+                                          assumenda modi officia cumque. Quasi voluptatibus beatae quam soluta dignissimos doloremque tempore tenetur nobis natus neque nisi ipsam
+                                           repellendus harum deserunt nesciunt libero doloribus, perferendis accusantium ex iusto! Doloribus et perspiciatis voluptas ipsam eos, 
+                                           natus nemo vel vitae suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut in aut iusto. Alias, harum! Molestias blanditiis ipsa, atque eos nihil error
+                                          quidem libero, amet, dolorum aliquam voluptatum autem recusandae architecto consequatur natus facilis obcaecati quae incidunt unde sit 
+                                          assumenda modi officia cumque. Quasi voluptatibus beatae quam soluta dignissimos doloremque tempore tenetur nobis natus neque nisi ipsam
+                                           repellendus harum deserunt nesciunt libero doloribus, perferendis accusantium ex iusto! Doloribus et perspiciatis voluptas ipsam eos, 
+                                           natus nemo vel vitae suscipit
+                                    </p>
+                                    <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut in aut iusto. Alias, harum! Molestias blanditiis ipsa, atque eos nihil error
+                                          quidem libero, amet, dolorum aliquam voluptatum autem recusandae architecto consequatur natus facilis obcaecati quae incidunt unde sit 
+                                          assumenda modi officia cumque. Quasi voluptatibus beatae quam soluta dignissimos doloremque tempore tenetur nobis natus neque nisi ipsam
+                                           repellendus harum deserunt nesciunt libero doloribus, perferendis accusantium ex iusto! Doloribus et perspiciatis voluptas ipsam eos, 
+                                           natus nemo vel vitae suscipit, distinctio ad sint!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut in aut iusto. Alias, 
+                                           harum! Molestias blanditiis ipsa, atque eos nihil error
+                                          quidem libero, amet, dolorum aliquam voluptatum autem recusandae architecto consequatur natus facilis obcaecati quae incidunt unde sit 
+                                          assumenda modi officia cumque. Quasi voluptatibus beatae quam soluta dignissimos doloremque tempore tenetur nobis natus neque nisi ipsam
+                                           repellendus harum deserunt nesciunt libero doloribus, perferendis accusantium ex iusto! Doloribus et perspiciatis voluptas ipsam eos, 
+                                           natus nemo vel vitae suscipit
+                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut in aut iusto. Alias, harum! Molestias blanditiis ipsa, atque eos nihil error
+                                          quidem libero, amet, dolorum aliquam voluptatum autem recusandae architecto consequatur natus facilis obcaecati quae incidunt unde sit 
+                                          assumenda modi officia cumque. Quasi voluptatibus beatae quam soluta dignissimos doloremque tempore tenetur nobis natus neque nisi ipsam
+                                           repellendus harum deserunt nesciunt libero doloribus, perferendis accusantium ex iusto! Doloribus et perspiciatis voluptas ipsam eos, 
+                                           natus nemo vel vitae suscipit
+                                    </p>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
              </div>

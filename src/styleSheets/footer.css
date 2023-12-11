@@ -1,13 +1,59 @@
 .footerDiv{
     background-color: #082f49;
-    height: 30vh;
+    height: 45vh;
     width: 100%;
 }
 
+.footerContents{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 6rem 0 5rem;
+    
+}
 
-.footerDiv > p{
+
+.footerContents > div > p{
     color: white;
+}
+
+.footerContents > div > h2{
+    color: white;
+}
+
+.footerLogo-txts{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.footerLogo-txts > h2{
     font-size: 3rem;
-    text-align: center;
-    padding: 2rem;
+}
+
+
+.footerLogoTxts{
+
+    width: 40rem;
+    color: white;
+}
+
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+
+
+.footerLinks > ul > li > a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+.footerLinks > ul > li{
+    list-style: none;
+    margin: 0.5rem 0;
 }
