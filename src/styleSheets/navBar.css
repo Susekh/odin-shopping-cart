@@ -24,7 +24,7 @@
 
 .navBar-l-cont > li > a{
     display: block;
-    color:#3b82f6;
+    color:black;
    font-size:1.6rem;  
     text-align: center;
     padding: 0.5rem; 
@@ -33,12 +33,13 @@
 }
 
 .navBar-l-cont > li > a:hover{
-    color: white;
+    color: #3b82f6;
 }
 
 .navBar-cont > li:hover{
     cursor: pointer;
-    background-color: #3b82f6;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.274);
     animation-name: fade-in-animation-navBar;
     animation-duration: 500ms;
 }
@@ -46,13 +47,13 @@
 @keyframes fade-in-animation-navBar{
     0% {
         opacity: 0.5;
-        background-color: rgba(255, 255, 255, 0.668);
+        background-color: white;
 
         
     }
     100% {
         opacity: 1;
-        background-color: #3b82f6;
+        background-color: rgba(128, 128, 128, 0.274);
     }
 }
 
