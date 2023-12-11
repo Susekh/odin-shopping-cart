@@ -3,6 +3,7 @@ import { Route,Routes } from 'react-router-dom';
 import HomePage from "./HomePage";
 import ErrorPage from "./ErrorPage.jsx";
 import Shop from './ShoppingPage.jsx';
+import Footer from "./Footer.jsx";
 import { useState } from "react";
 import '../styleSheets/App.css'
 import FetchProducts from "../customHooks/loadProducts.jsx";
@@ -49,7 +50,6 @@ const App = () => {
   return (
   
   <>
-     <div className="shop-body">
         <div>
         <NavBar cart = {cart} toggleCart={toggleCart} setToggleCart = {setToggleCart} />
           <div>
@@ -114,8 +114,9 @@ const App = () => {
             </div>
             
                   )}
+            <Footer />
        
-     </div>
+     
   </>
     
   );

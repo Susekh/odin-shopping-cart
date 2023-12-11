@@ -11,7 +11,7 @@ const NavBar = (props) => {
     const cart = props.cart;
     const toggleCart = props.toggleCart;
     const setToggleCart = props.setToggleCart;
-    
+
 
     return(
         <>
@@ -21,7 +21,7 @@ const NavBar = (props) => {
                     <li><Link to="shop">Shop</Link></li>
                 </ul>
                 <div onClick={() => { setToggleCart(!toggleCart)}} className="navBar-r-cont navBar-cont ">
-                    <img src={cartIcon}></img>
+                    <img src={cartIcon} alt="Shopping Cart"></img>
                     <strong className="cart-alert">{cart}</strong>
                 </div>
             </nav>

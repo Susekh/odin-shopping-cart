@@ -1,0 +1,13 @@
+.footerDiv{
+    background-color: #082f49;
+    height: 30vh;
+    width: 100%;
+}
+
+
+.footerDiv > p{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}

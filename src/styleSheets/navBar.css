@@ -1,13 +1,16 @@
 .navBar{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
     position: fixed;
     width: 100%;
-    height: 3rem;
+    height: 4rem;
+    z-index: 1;
+    gap: 1rem;
     top:0;
     left: 0;
-    padding-top: 0.2rem;
     background-color: rgba(255, 255, 255, 0.668);
+    backdrop-filter: blur(5px);
 }
 
 .navBar > ul{
@@ -19,19 +22,38 @@
     gap: 1rem;
 }
 
-.navBar-l-cont > li > a{ 
-    display: block;  
-    color: blue;  
+.navBar-l-cont > li > a{
+    display: block;
+    color:#3b82f6;
    font-size:1.6rem;  
     text-align: center;
     padding: 0.5rem; 
     text-decoration: none;  
+
 }
 
+.navBar-l-cont > li > a:hover{
+    color: white;
+}
 
 .navBar-cont > li:hover{
     cursor: pointer;
-    background-color: rgba(128, 128, 128, 0.455);
+    background-color: #3b82f6;
+    animation-name: fade-in-animation-navBar;
+    animation-duration: 500ms;
+}
+
+@keyframes fade-in-animation-navBar{
+    0% {
+        opacity: 0.5;
+        background-color: rgba(255, 255, 255, 0.668);
+
+        
+    }
+    100% {
+        opacity: 1;
+        background-color: #3b82f6;
+    }
 }
 
 .navBar-r-cont{
@@ -39,7 +61,7 @@
 }
 
 .navBar-r-cont > img{
-    width: 3.3rem;
+    width: 2.7rem;
     padding-right: 1rem;
 }
 .cart-bar{
@@ -49,10 +71,10 @@
 
 .cart-alert{
     background-color: rgba(255, 0, 0, 0.707);
-    padding: 0.5rem;
+    padding: 0.4rem;
     border-radius: 10px;
     color: white;
     position: absolute;
     font-size: 0.7rem;
-    transform: translateX(-2.5rem);
+    transform: translate(-2rem,-0.2rem);
 }
