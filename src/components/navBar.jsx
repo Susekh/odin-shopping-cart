@@ -16,6 +16,7 @@ const NavBar = (props) => {
     return(
         <>
             <nav className="navBar">
+                <div className="navbarLogo"><Link to="/">Logo</Link></div>
                 <ul className="navBar-l-cont navBar-cont"> 
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="shop">Shop</Link></li>
