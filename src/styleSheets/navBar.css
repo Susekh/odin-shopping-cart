@@ -43,17 +43,7 @@
 
 }
 
-.navBar-l-cont > li > a:hover{
-    color: #3b82f6;
-}
 
-.navBar-cont > li:hover{
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: rgba(128, 128, 128, 0.274);
-    animation-name: fade-in-animation-navBar;
-    animation-duration: 500ms;
-}
 
 @keyframes fade-in-animation-navBar{
     0% {
@@ -91,6 +81,19 @@
     transform: translate(-2rem,-0.2rem);
 }
 
+@media only screen and (min-width: 767px) {
+    .navBar-l-cont > li > a:hover{
+        color: #3b82f6;
+    }
+    
+    .navBar-cont > li:hover{
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.274);
+        animation-name: fade-in-animation-navBar;
+        animation-duration: 500ms;
+    }
+}
 
 
 @media only screen and (max-width: 767px) {
@@ -103,6 +106,7 @@
 
 .navBar-l-cont >  li > a{
     font-size: 1.2rem;
+    padding-right: 2rem;
 }
 
 

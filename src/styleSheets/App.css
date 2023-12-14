@@ -211,7 +211,7 @@
         height: 100%;
         background-color: white;
         top: 0;
-        padding: 1rem;
+        padding: 1rem 3rem;
         overflow: hidden;
         animation-name: slide-in;
         animation-duration: 1s;
@@ -221,9 +221,14 @@
         flex-direction: column;
         align-items: first baseline;
     }
+    
+    .subtotal-div{
+        display: flex;
+        gap: 1rem;
+        padding-left: 1rem;
+    }
 
     .checkout-btn{
-        margin-left: 0.3rem;
         border-radius: 30px;
         padding: 1rem;
         width: 10rem;
