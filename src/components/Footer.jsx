@@ -17,7 +17,7 @@ function Footer(){
                         </div>
                     </div>
                     <div className='footerLinks'>
-                        <h2>USEFUL<br></br>LINKS</h2>
+                        <h2>USEFUL LINKS</h2>
                         <ul>
                             <li><Link to="/">HOME</Link></li>
                             <li><Link to="shop">SHOP</Link></li>

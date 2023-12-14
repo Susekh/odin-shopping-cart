@@ -1,5 +1,3 @@
-
-
 .shop-overlay{
     z-index: 2;
     width: 100%;
@@ -35,22 +33,12 @@
     }
 }
 
+
 .shop-cart-bar{
     z-index: 3;
     position: fixed;
-    width: 25rem;
-    height: 100vh;
-    background-color: white;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    overflow: auto;
-    padding: 3rem 5rem;
     animation-name: slide-in;
     animation-duration: 1s;
-    
-    
-
 }
 
 .shopping-bar-hide {
@@ -58,23 +46,30 @@
     animation-duration: 600ms;
   }
 
+
 @keyframes slide-in{
     0% {transform: translateX(40rem);}
     50% {transform: translateX(-1.5rem);}
     100%{transform: translateX(0);}
 }
 
-@keyframes slide-out {
+.shopping-bar-hide {
+    animation-name: slide-out;
+    animation-duration: 600ms;
+  }
+
+
+  @keyframes slide-out {
     0% { transform: translateX(0); }
     100% { transform: translateX(40rem); }
 }
+
 
 .shop-cart-bar > div{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-
 
 .cart-item{
     display: flex;
@@ -121,11 +116,44 @@
 
 .purchase-item{
     margin-top: 3rem;
-    border-top: 2px solid gray;
     width: 23rem;
     height: 10rem;
     padding: 3rem 0;
 }
+
+
+
+
+.checkout-btn:hover{
+    cursor: pointer;
+    background-color: #3b82f6;
+}
+
+
+
+
+
+@media only screen and (min-width: 767px) {
+
+
+
+
+.shop-cart-bar{
+    width: 25rem;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    overflow: auto;
+    padding: 3rem 5rem;
+}
+
+.purchase-item{
+    border-top: 2px solid gray;
+}
+
+
 
 
 .checkout-btn-border{
@@ -148,13 +176,58 @@
     border-style:solid;
 }
 
-
-.checkout-btn:hover{
-    cursor: pointer;
-    background-color: #3b82f6;
-}
-
 .subtotal-div{
     display: flex;
     justify-content: space-between;
+}
+
+.shoppingBarTop > button {
+    display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .shop-overlay{display: none;}
+    .shoppingBarTop{
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .shoppingBarTop > button {
+        padding: 1rem;
+        border: none;
+        background-color: white;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    .shop-cart-bar{
+        z-index: 3;
+        position: fixed ;
+        width: 100vw;
+        height: 100%;
+        background-color: white;
+        top: 0;
+        padding: 1rem;
+        overflow: hidden;
+        animation-name: slide-in;
+        animation-duration: 1s;
+    }
+
+    .cart-item{
+        flex-direction: column;
+        align-items: first baseline;
+    }
+
+    .checkout-btn{
+        margin-left: 0.3rem;
+        border-radius: 30px;
+        padding: 1rem;
+        width: 10rem;
+        border-style:solid;
+    }
+
 }

@@ -1,16 +1,7 @@
 .footerDiv{
     background-color: #082f49;
-    height: 45vh;
     width: 100%;
 }
-
-.footerContents{
-    display: flex;
-    justify-content: space-between;
-    padding: 5rem 6rem 0 5rem;
-    
-}
-
 
 .footerContents > div > p{
     color: white;
@@ -24,24 +15,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
-}
-
-.footerLogo-txts > h2{
-    font-size: 3rem;
-}
-
-
-.footerLogoTxts{
-
-    width: 40rem;
     color: white;
-}
 
-
-.footerLinks{
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
 }
 
 
@@ -56,4 +31,66 @@
 .footerLinks > ul > li{
     list-style: none;
     margin: 0.5rem 0;
+}
+
+
+
+@media only screen and (min-width: 767px) {
+
+
+.footerContents{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 6rem 0 5rem;
+    
+}
+
+.footerLogo-txts{
+    width: 40rem;
+}
+
+
+.footerLogo-txts > h2{
+    font-size: 3rem;
+}
+
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 767px){
+
+    .footerDiv{
+        padding: 2rem 0;
+    }
+
+
+    .footerContents{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .footerLogo-txts{
+        text-align: center;
+    }
+
+    .footerLinks > h2{
+        text-align: center;
+    }
+
+    .footerLinks > ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
 }

@@ -90,3 +90,23 @@
     font-size: 0.7rem;
     transform: translate(-2rem,-0.2rem);
 }
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+
+.hide_home{
+    display: none;
+}
+
+.navBar-l-cont >  li > a{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+}

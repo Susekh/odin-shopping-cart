@@ -11,7 +11,7 @@ function HomePage(){
                     <div className="homePage-top">
                         <div className="heroDiv">
                         {
-                            heroProductPic1? (<img src={heroProductPic1} alt="product photo"></img>):(<p>Loading...</p>)
+                            heroProductPic1? (<img src={heroProductPic1} height={300} width={300} alt="product photo"></img>):(<p>Loading...</p>)
                         }
                             
                         </div>
@@ -54,8 +54,9 @@ function HomePage(){
                             </div>
                             
                             <div className="hmPg-closing-txts">
-                                <h2>Effortless <span className="bold-text">Elegance.</span></h2>
+                                
                                 <div className="hmPg-container-text" >
+                                    <h2>Effortless <span className="bold-text">Elegance.</span></h2>
                                     <p>
                                         Indulge in a seamless style experience with our &quot;Shop the Look&quot; collection, where fashion meets convenience.
                                         Elevate your wardrobe effortlessly by exploring carefully curated ensembles that encapsulate the latest trends and timeless classics.

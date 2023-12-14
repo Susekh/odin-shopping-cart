@@ -69,7 +69,10 @@ const App = () => {
                       <div className={`shop-cart-bar ${contractBar ? 'shopping-bar-hide' : ''}`}>
                         
                           <div>
-                          <h1>Shopping Bag</h1>
+                          <div className="shoppingBarTop">
+                            <h1>Shopping Bag</h1>
+                            <button onClick={handleClickOverlay}>X</button>
+                          </div>
                           {
                             keysArray.length ? (
                               keysArray.map((key, index) => (
