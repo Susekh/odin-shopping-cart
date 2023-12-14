@@ -8,15 +8,12 @@ import { useState } from "react";
 import '../styleSheets/App.css'
 import FetchProducts from "../customHooks/loadProducts.jsx";
 
-// now make a state for cart that will take data from onlcik button from shopping page and then it will update the cart state by comparing the title and price it recieved from the add to cart button
-
-// make state which will take the index with the number of times it gets clicked then render it in the shopping cart part
-
 
 
 const App = () => {
   
   const [response, setResponse] = useState(null);
+  // getting the datas of shop items from fakestore api
   FetchProducts('https://fakestoreapi.com/products?limit=20', setResponse);
   const [toggleCart, setToggleCart] = useState(false);
 
