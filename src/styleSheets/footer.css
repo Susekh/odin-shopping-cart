@@ -3,7 +3,7 @@
 }
 
 .footerContents > div > p{
-    color: white;
+    color: white;   
 }
 
 .footerContents > div > h2{
@@ -15,7 +15,6 @@
     flex-direction: column;
     gap: 1.3rem;
     color: white;
-
 }
 
 
@@ -23,7 +22,6 @@
 .footerLinks > ul > li > a{
     color: white;
     text-decoration: none;
-    
 }
 
 
@@ -33,7 +31,7 @@
 }
 
 
-
+/* For pcs and bigger screens */
 @media only screen and (min-width: 767px) {
 
 
@@ -41,7 +39,6 @@
     display: flex;
     justify-content: space-between;
     padding: 5rem 6rem 0 5rem;
-    
 }
 
 .footerLogo-txts{
@@ -65,10 +62,11 @@
 
 
 
+/* For mobile devices*/
 @media only screen and (max-width: 767px){
 
     .footerDiv{
-        padding: 2rem 0;
+        padding: 2rem;
     }
 
 
@@ -79,7 +77,7 @@
     }
     
     .footerLogo-txts{
-        text-align: center;
+        text-align: left;
     }
 
     .footerLinks > h2{

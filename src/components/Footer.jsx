@@ -11,8 +11,7 @@ function Footer(){
                         <h2>LOGO</h2>
                         <div className='footerLogoTxts'>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Ut in aut iusto. Alias, harum! Molestias blanditiis ipsa, atque eos nihil error
-                                                quidem libero, amet, dolorum aliquam voluptatum autem recusandae architecto consequatur natus facilis obcaecati quae incidunt unde sit 
-                                                assumenda modi officia cumque.
+                                                quidem libero, amet.
                             </p>
                         </div>
                     </div>
