@@ -42,10 +42,7 @@
     overflow: auto;
 }
 
-.shopping-bar-hide {
-    animation-name: slide-out;
-    animation-duration: 600ms;
-  }
+
 
 
 @keyframes slide-in{
@@ -53,11 +50,6 @@
     50% {transform: translateX(-1.5rem);}
     100%{transform: translateX(0);}
 }
-
-.shopping-bar-hide {
-    animation-name: slide-out;
-    animation-duration: 600ms;
-  }
 
 
   @keyframes slide-out {
@@ -150,6 +142,11 @@
     padding: 3rem 5rem;
 }
 
+.shopping-bar-hide {
+    animation-name: slide-out;
+    animation-duration: 600ms;
+}
+
 .purchase-item{
     border-top: 2px solid gray;
 }
@@ -215,6 +212,11 @@
         padding: 1rem 1.8rem;
         animation-name: slide-in;
         animation-duration: 1s;
+    }
+
+    .shopping-bar-hide {
+        animation-name: slide-out;
+        animation-duration: 600ms;
     }
 
     .cart-item{

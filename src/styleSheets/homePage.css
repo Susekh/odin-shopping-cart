@@ -66,6 +66,10 @@
         gap: 5rem;
         
     }
+
+    .homePage-top-contents > p {
+        line-height: 1.5rem;
+    }
     
     .hm-top-cnts-heading-txt1{
         padding-left: 4rem;
@@ -222,6 +226,7 @@
     }
     .hmPg-container-text > p{
         font-size: 0.85rem;
+        line-height: 1.5rem;
     }
     
     
@@ -297,6 +302,7 @@
     }
     .homePage-top-contents > p{
         text-align: center;
+        line-height: 1.8rem;
     }
 
     .call-to-action-part{
